@@ -4,7 +4,7 @@ kind: VirtualServer
 metadata:
   name: sox
 spec:
-  host: 10.62.5.7
+  host: sox.demo.lab
   upstreams:
     - name: front-end
       service: front-end
