@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    path: deploy/kubernetes/complete-demo.yaml
+    path: deploy/kubernetes/manifests
     repoURL: https://github.com/phenetrik/microservices-sock-shop-demo.git
     targetRevision: HEAD
   destination:
