@@ -9,6 +9,7 @@ spec:
     - name: front-end
       service: front-end
       port: 80
+  routes:
     - path: /fake1
       action:
         pass: front-end
