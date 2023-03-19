@@ -1,0 +1,14 @@
+---
+apiVersion: k8s.nginx.org/v1
+kind: VirtualServer
+metadata:
+  name: sox
+spec:
+  host: 10.62.5.7
+  upstreams:
+    - name: front-end
+      service: front-end
+      port: 80
+    - path: /fake1
+      action:
+        pass: front-end
